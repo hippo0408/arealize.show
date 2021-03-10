@@ -1,0 +1,155 @@
+@media(max-width:780px){
+    .sidebar{
+        display: none;
+    }
+
+    .main{
+        width: 100%;
+    }
+
+    .main-title{
+        left:70px;
+    }
+
+    .sub-title{
+        left: 70px;
+    }
+
+    #about{
+       width: 100%;
+    }
+
+    .concept p{
+      text-align: center;
+    }
+
+    .concept ul{
+        text-align: left;
+    }
+
+    #roster{
+        width: 100%;
+    }
+
+    .member{
+        width: 50%;
+    }
+
+.member-card{
+    height: 40px;
+   
+}
+
+.member-image img{
+    height: 350px;
+}
+
+    .member-card .number{
+        font-size:1.8em;
+       
+        padding-bottom: 35px;
+       
+       
+    }
+
+    .member-card .name{
+        font-size: 1.3em;
+    }
+    
+    #gallary{
+        width: 100%;
+    }
+
+.photos{
+    flex-direction: column;
+}
+
+.photo-wrapper img{
+    width: 100%;
+}
+
+    #result{
+        width: 100%;
+    }
+
+    #project{
+        width: 100%;
+           }
+
+    .lessons{
+        flex-direction: column;
+    }
+
+    .fas{
+        font-size: 17em;
+        color:orangered
+    }
+    
+    .lesson{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .lesson-icon p{
+        position:absolute;
+        top:65px;
+        width:100%;
+        color:blue;
+        font-size:40px ;
+        font-weight: bold;
+        font-family:Georgia, 'Times New Roman', Times, serif
+    }
+    
+    .lesson-text {
+        width: 70%;
+        display: inline-block;
+        margin-top: 20px;
+        font-size: 20px;
+        color:cornsilk;
+        text-align: left;
+        font-size: 1em;
+        
+    }
+
+    #contact{
+       width: 100%;
+    }
+.place{
+    width: 100%;
+    flex-direction: column;
+}
+
+.place-text{
+    margin: 0 auto;
+}
+
+.place-map{
+    width: 100vw;
+    position:relative;
+    overflow: hidden;
+    padding-bottom: 45%;
+    margin: 0 auto;
+
+}
+
+iframe{
+    position:absolute;
+    top:0;
+    left:0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+    footer{
+        width: 100%;
+    }
+
+}
+
+@media(min-width:780px){
+   .header{
+       display: none;
+   } 
+}
+

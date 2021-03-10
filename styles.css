@@ -1,0 +1,478 @@
+
+body{
+    width: 100%;
+    background-color: rgb(12, 11, 11);
+    color: cornsilk;
+    margin: 0;
+    
+    
+}
+
+a{
+    color: cornsilk;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    vertical-align: bottom;
+}
+
+.header{
+    text-align: center;
+   width: 100%;
+   height: 60px;
+   position: fixed; 
+  background-color: rgb(12, 11, 11);
+  top:0;
+  z-index: 1;
+
+}
+
+.header img{
+    float:left;
+    height: 60px;
+    
+
+}
+
+.header #open  {
+   float: right;
+    color: cornsilk;
+   font-size: 35px;
+   line-height: 60px;
+   margin-right: 20px;
+   cursor: pointer;
+   
+}
+
+.overlay #close{
+    position: absolute;
+    top:10px;
+    right: 20px;
+    color: cornsilk;
+   font-size: 40px;
+   cursor: pointer;   
+}
+
+.header #open.hide{
+    display: none;
+}
+
+.overlay{
+    padding-top: 70px;
+    position:fixed;
+    top:0;
+    bottom: 0;
+    right:0;
+    left:0;
+    background-color: rgba(7, 6, 6, 0.95);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .6s;
+    z-index: 2;
+}
+
+.overlay.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.overlay li{
+    padding: 15px 0;
+    border-bottom: 1px solid cornsilk;
+    text-align: left;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity .3s,transform 0.3s;
+}
+
+.overlay.show li{
+    opacity: 1;
+    transform: none;
+}
+
+.overlay ul li a .fas{
+    color: cornsilk;
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+.overlay ul li a{
+    color:cornsilk;
+}
+
+.overlay ul li a:hover{
+    opacity:0.7; 
+}
+
+
+.heading{
+    color: blue;
+    border-bottom: solid 3px blue;
+    display: inline-block;
+    margin-top: 50px;   
+}
+
+.sidebar{
+    width: 20%;
+    background-color: rgb(12, 11, 11);
+    position:fixed;
+    right:0;
+    height: 100vh;
+}
+
+.side-logo{
+    height: 20%px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+
+.overlay .header-icon{
+    margin-left:40px;
+    font-size: 2em;
+}
+
+
+.header-icon a:hover{
+    opacity: 0.7;
+}
+
+nav{
+    margin-left: 15px;
+}
+
+nav ul li{
+    margin:30px 0 15px 0;
+}
+
+nav ul li a{
+   font-family:Arial, Helvetica, sans-serif; 
+}
+
+nav ul li a:hover{
+    opacity: 0.7;
+}
+
+.side-icons {
+    font-size:1.5em;
+    margin:30px 0 0 55px
+
+}
+
+.side-icons a:hover{
+    opacity:0.7;
+}
+
+.main{
+    width: 80%;
+    border-bottom: 1px solid cornsilk;
+    padding-bottom: 30px;
+}
+
+.main-image{
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+.main-title{
+    position: absolute;
+    bottom:90px;
+    left: 50px;
+    color: cornsilk;
+    font-size: 4em;
+}
+
+.sub-title{
+    position: absolute;
+    bottom:70px;
+    left: 50px;
+    color: cornsilk;
+    font-size: 2em;
+}
+
+#about{
+    width: 80%;
+   text-align: center;
+   margin: 0 auto;
+ 
+}
+
+#about p{
+    text-align: left;
+}
+
+.concept{
+    margin-top: 50px;  
+    
+}
+
+.concept h2{
+    margin: 0 auto;
+    border-bottom: solid 2px cornsilk;
+    display: inline-block;
+}
+
+.concept h2:last-of-type{
+    margin:20px 0 0 0;
+}
+
+.concept ul{
+ text-align: center;
+  
+}
+
+.concept ul li{
+    margin-top: 10px;
+    font-size: 2em;
+}
+
+.achevment{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 2em;
+}
+
+#roster{
+    width: 80%;
+}
+
+.roster-image img{
+    width: 100%;
+    height: 600px;
+}
+
+.roster-image {
+    position: relative;
+    
+}
+
+.roster-image h3{
+    position: absolute;
+    top:40%;
+    left:40px;
+    font-size: 3em;
+    line-height: 1  ;
+    color:cornsilk;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.roster-image p{
+    position: absolute;
+    top:70%;
+    left:40px;
+    color: cornsilk;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.members{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    
+}
+
+.member{
+    width: 33.33333%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-left:1px solid cornsilk;
+    border-right:1px solid cornsilk;
+    box-sizing: border-box;
+}
+
+.member-card{
+    display: flex;
+    height: 80px;
+    padding-bottom: 40px;
+
+}
+
+.member-card .number{
+   padding:0 10px;
+   border-right: 1px solid wheat;
+   
+    font-size: 3em;
+   line-height: 40px;
+   
+   margin-bottom:0 ;
+
+}
+
+.member-image img{
+    height: 450px;
+    width:100%;
+    border-bottom: 1px solid wheat;
+    
+}
+
+.member-image{
+    position:relative;
+}
+
+.member-image p{
+    position: absolute;
+    top:0px;
+    left: 5px;
+    font-size: 16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.member-card .name{
+    line-height: 1;
+    font-family:Arial, Helvetica, sans-serif;
+font-size: 2em;
+padding-left: 10px;
+
+}
+
+
+span{
+    color:blue;
+    font-weight: initial;
+    
+}
+
+#gallary{
+    width: 100%;
+}
+
+
+ .header-title{
+    text-align: center;
+}
+
+.photo-wrapper img{
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 33.333333%;
+    
+}
+
+
+
+
+span .main-photo{
+width: 100%;
+display: flex;
+
+}
+
+
+#result{
+    width: 80%;
+    border-bottom: 1px solid cornsilk;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+.game-result dl{
+display: flex;
+flex-wrap: wrap;
+display: inline-block;
+
+}
+
+.game-result dt{
+   text-align: center;
+   font-size: 2em;
+   margin-top: 10px;
+}
+
+.game-result dd{
+text-align: left;
+margin-bottom: 15px;
+font-size: 2em;
+}
+
+#project{
+    width:80%;
+    text-align: center;     
+}
+
+.lessons{
+    display: flex;
+    border-bottom: 1px solid cornsilk;
+    padding-bottom: 30px;
+}
+
+.fas{
+    font-size: 9em;
+    color:orangered
+}
+
+.lesson{
+    width: 25%;
+}
+
+.lesson-icon{
+    position:relative;
+    z-index: 0;
+}
+
+.lesson-icon p{
+    position:absolute;
+    top:15px;
+    width:100%;
+    color:blue;
+    font-size:30px ;
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.lesson-text {
+    width: 80%;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 20px;
+    color:cornsilk;
+    text-align: left;
+    font-size: 1em;
+    
+}
+
+#contact{
+width: 80%;
+text-align: center; 
+margin: 0 auto;  
+}
+
+.place{
+    display: flex;
+}
+
+.place-text{
+    text-align: left;
+    font-size: 16px;
+    width: 40%;
+    margin-left: 50px;
+}
+
+.place-map{
+    margin-left: 20px;
+    width: 40%;
+    position:relative;
+}
+
+iframe{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    width:100%;
+    text-align: center;
+    margin-top: 120px;
+    padding-bottom: 30px;
+}
+
